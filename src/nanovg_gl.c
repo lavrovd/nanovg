@@ -11,7 +11,11 @@
 #include <string.h>
 #include <math.h>
 #include "nanovg.h"
+#ifdef _WIN32
+#include <LGWinGL.h>
+#else
 #include <OpenGL/gl.h>
+#endif
 #include "nanovg_gl.h"
 
 enum GLNVGuniformLoc {
